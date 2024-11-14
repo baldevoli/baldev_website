@@ -1,12 +1,12 @@
 /* Catppuccin Macchiato Theme */
 :root {
-    --base: #24273A;
-    --mantle: #1E2030;
-    --crust: #181926;
-    --text: #CAD3F5;
+    --base: #274D60;
+    --mantle: #032F30;
+    --crust: #0A7075;
+    --text: #031716;
     --rosewater: #F4DBD6;
     --flamingo: #F0C6C6;
-    --mauve: #C6A0F6;
+    --mauve: #6BA3BE;
     --sky: #8AADF4;
     --green: #A6DA95;
 }
@@ -93,7 +93,7 @@ nav ul li a:hover {
 /* Section Styling */
 section {
     padding: 40px 0;
-    background-color: var(#0A7075);
+    background-color: var(--base);
     color: var(--text);
 }
 
@@ -101,7 +101,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
-    color: var(#6BA3BE);
+    color: var(--crust);
 }
 
 .project a {
