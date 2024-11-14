@@ -93,7 +93,7 @@ nav ul li a:hover {
 /* Section Styling */
 section {
     padding: 40px 0;
-    background-color: var(--base);
+    background-color: var(#0A7075);
     color: var(--text);
 }
 
@@ -101,7 +101,7 @@ h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
-    color: var(--mauve);
+    color: var(#6BA3BE);
 }
 
 .project a {
