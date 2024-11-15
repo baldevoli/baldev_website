@@ -1,9 +1,16 @@
 /* Catppuccin Macchiato Theme */
 :root {
+<<<<<<< HEAD
     --base: #274D60;
     --mantle: #032F30;
     --crust: #0A7075;
     --text: #031716;
+=======
+    --base: #24273A;
+    --mantle: #FFFFFF;
+    --crust: #031716;
+    --text: #CAD3F5;
+>>>>>>> e895bb1 (make backgroung white)
     --rosewater: #F4DBD6;
     --flamingo: #F0C6C6;
     --mauve: #6BA3BE;
