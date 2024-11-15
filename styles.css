@@ -5,12 +5,11 @@
     --mantle: #032F30;
     --crust: #0A7075;
     --text: #031716;
-=======
     --base: #24273A;
     --mantle: #FFFFFF;
+    --black: #000000;
     --crust: #031716;
     --text: #CAD3F5;
->>>>>>> e895bb1 (make backgroung white)
     --rosewater: #F4DBD6;
     --flamingo: #F0C6C6;
     --mauve: #6BA3BE;
@@ -25,7 +24,7 @@
 }
 
 body {
-    background-color: var(--mantle);
+    background-color: var(--base);
     color: var(--text);
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -131,13 +130,13 @@ h2 {
 }
 
 #resume h2 {
-    color: var(--mauve);
+    color: var(--black);
 }
 
 #resume hr.section-divider {
     border: none;
     height: 2px;
-    background-color: var(--sky);
+    background-color: var(--mantle);
     margin: 10px 0 20px;
 }
 
@@ -149,14 +148,14 @@ ul {
 .institution, .job-title {
     font-size: 1.2rem;
     font-weight: bold;
-    color: var(--rosewater);
+    color: var(--black);
     margin-bottom: 5px;
 }
 
 .degree-dates, .dates {
     font-size: 1rem;
     font-style: italic;
-    color: var(--flamingo);
+    color: var(--black);
 }
 
 ul.job-details {
@@ -172,7 +171,7 @@ ul.skills-list {
 .contact-info {
     text-align: right;
     font-size: 1.1rem;
-    color: var(--green);
+    color: var(--black);
 }
 
 .contact-info p {
@@ -181,7 +180,7 @@ ul.skills-list {
 
 /* Footer */
 footer {
-    background-color: var(--crust);
+    background-color: var(--mantle);
     color: var(--rosewater);
     text-align: center;
     padding: 10px 0;
