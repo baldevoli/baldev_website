@@ -5,101 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Baldev Oli - Resume</title>
+    <meta name="description" content="Resume of Baldev Oli - Computer Science Student at UMBC">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
     <header>
         <div class="container">
             <h1>Baldev Oli</h1>
-            <p>CS Student | Data Science | Programmer</p>
-            <a href="index.html" class="home-btn">Home</a> <!-- Home Button -->
+            <p>Computer Science Student | Full-Stack Developer | Data Science Enthusiast</p>
+            <a href="index.html" class="home-btn">Home</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <section id="resume">
         <div class="container">
-            <!-- Contact Info Section -->
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:olibaldev203@gmail.com">olibaldev203@gmail.com</a></p>
-                <p><strong>Location:</strong> Nottingham, MD</p>
-                <p><strong>Phone:</strong> +1-929-358-9606</p>
+            <div class="resume-content">
+                <h2>Resume</h2>
+                <div class="resume-actions">
+                    <a href="BaldevOli_Main.pdf" download class="download-btn">
+                        <span>⬇️</span>
+                        Download PDF
+                    </a>
+                </div>
+                
+                <div class="pdf-container">
+                    <iframe src="BaldevOli_Main.pdf" width="100%" height="800px" frameborder="0">
+                        <p>Your browser does not support PDFs. 
+                        <a href="BaldevOli_Main.pdf" target="_blank">Click here to view the PDF</a>.</p>
+                    </iframe>
+                </div>
+                
+                <div class="resume-info">
+                    <h3>Quick Contact Info</h3>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <strong>Email:</strong> 
+                            <a href="mailto:olibaldev203@gmail.com">olibaldev203@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location:</strong> Nottingham, MD
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +1-929-358-9606
+                        </div>
+                        <div class="contact-item">
+                            <strong>LinkedIn:</strong> 
+                            <a href="https://www.linkedin.com/in/baldevoli" target="_blank">linkedin.com/in/baldevoli</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>GitHub:</strong> 
+                            <a href="https://github.com/baldevoli" target="_blank">github.com/baldevoli</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <!-- Education Section -->
-            <h2>Education</h2>
-            <hr class="section-divider">
-            <ul class="education-list">
-                <li>
-                    <div class="institution">
-                        <strong>Community College of Baltimore County</strong>, Baltimore, MD
-                    </div>
-                    <div class="degree-dates">
-                        Associate of Science in Computer Science (Aug. 2021 – Dec. 2023)
-                    </div>
-                </li>
-                <li>
-                    <div class="institution">
-                        <strong>University Of Maryland Baltimore County</strong>, Baltimore, MD
-                    </div>
-                    <div class="degree-dates">
-                        Bachelor of Science in Computer Science (Feb. 2024 – Current)
-                    </div>
-                </li>
-            </ul>
-
-            <!-- Experience Section -->
-            <h2>Experience</h2>
-            <hr class="section-divider">
-            <ul class="experience-list">
-                <li>
-                    <div class="job-title">
-                        <strong>Amazon</strong>, Baltimore, MD <span class="dates">Oct. 2021 – Present</span>
-                    </div>
-                    <ul class="job-details">
-                        <li>Improved operational efficiency by meeting and exceeding daily shipping targets.</li>
-                        <li>Ensured proper handaling and segregation of hazardous materials, following strict company safety protocols.</li>
-                        <li>Followed Company Safety policies and procedures.</li>
-                        <li>Scanned and shipped products using RF hand scanner.</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="job-title">
-                        <strong>Comcast</strong>, Baltimore, MD <span class="dates">Jun. 2023 – Jan. 2024</span>
-                    </div>
-                    <ul class="job-details">
-                        <li>Identified and assessed the needs of learner-workers.</li>
-                        <li>Built trust and relationships with learner-workers through open and interactive communication.</li>
-                        <li>Provided accurate information about access, devices, and connectivity.</li>
-                    </ul>
-                </li>
-                <li>
-                    <div class="job-title">
-                        <strong>Himalayan Offset Press</strong>, Lumbini, Nepal <span class="dates">Feb. 2017 – Sep. 2019</span>
-                    </div>
-                    <ul class="job-details">
-                        <li>Inspected machines and performed minor repairs.</li>
-                        <li>Set up and operated printing press machines.</li>
-                        <li>Loaded and positioned un-printed materials.</li>
-                        <li>Analyzed workload to predict and prevent problems.</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <!-- Skills Section -->
-            <h2>Skills</h2>
-            <hr class="section-divider">
-            <ul class="skills-list">
-                <li><strong>Languages:</strong> English, Nepali, Hindi</li>
-                <li><strong>Technologies:</strong> Excel, Spreadsheet Management</li>
-                <li><strong>Programming:</strong> Python, SQL,C++,C</li>
-            </ul>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Baldev Oli. All Rights Reserved.</p>
+            <p>&copy; 2024 Baldev Oli. All Rights Reserved. Built with ❤️ and modern web technologies.</p>
         </div>
     </footer>
+
+    <script>
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+    </script>
+
+    <style>
+        .resume-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 0.9rem;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .pdf-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px var(--shadow);
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .pdf-container iframe {
+            border-radius: 8px;
+            width: 100%;
+            min-height: 800px;
+        }
+
+        .resume-info {
+            background: var(--background-alt);
+            border-radius: 12px;
+            padding: 2rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .resume-info h3 {
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .contact-item strong {
+            color: var(--text);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .resume-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .download-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .pdf-container iframe {
+                min-height: 600px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .resume-info {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pdf-container iframe {
+                min-height: 500px;
+            }
+
+            .resume-info {
+                padding: 1rem;
+            }
+        }
+    </style>
 </body>
 </html>

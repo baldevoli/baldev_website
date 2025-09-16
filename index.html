@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Baldev Oli - Portfolio</title>
+    <title>Baldev Oli - Computer Science Student & Developer</title>
+    <meta name="description" content="Baldev Oli - Computer Science student at UMBC with expertise in Full-Stack Development, Data Science, and Programming">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
     <header>
         <div class="container">
             <h1>Baldev Oli</h1>
-            <p>CS Student | Data Science | Programmer</p>
-            <a href="index.html" class="home-btn">Home</a> <!-- Home Button -->
+            <p>Computer Science Student | Full-Stack Developer | Data Science Enthusiast</p>
+            <a href="index.html" class="home-btn">Home</a>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="blog.html">Blogs</a></li>
-
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,45 +37,122 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>Hello! I'm Baldev Oli, a FullStack developer with a passion for building beautiful and functional websites. I enjoy solving problems and creating interactive user experiences.</p>
+            <p>Hello! I'm Baldev Oli, a passionate Computer Science student at the University of Maryland Baltimore County (UMBC). With a strong foundation in programming and a keen interest in data science, I enjoy building innovative solutions and exploring the intersection of technology and real-world problems.</p>
+            <p>My journey in computer science began at the Community College of Baltimore County, where I earned my Associate's degree, and continues at UMBC as I pursue my Bachelor's degree. I'm particularly drawn to full-stack development, where I can bring ideas to life through clean, efficient code and intuitive user experiences.</p>
+            <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my learning journey through my blog. I believe in continuous learning and staying up-to-date with the latest trends in technology.</p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Project1 description</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>A brief description of your project.</p>
-                <a href="#" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>A brief description of your project.</p>
-                <a href="#" target="_blank">View Project</a>
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution built with modern web technologies. Features include user authentication, product management, shopping cart functionality, and secure payment processing.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Data Visualization Dashboard</h3>
+                    <p>An interactive dashboard for analyzing and visualizing complex datasets. Built with Python, JavaScript, and modern visualization libraries to provide insights into business metrics.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Student Management System</h3>
+                    <p>A comprehensive system for managing student records, grades, and academic progress. Features include automated reporting, grade calculations, and parent communication tools.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Machine Learning Model</h3>
+                    <p>A predictive model for analyzing student performance patterns. Utilizes various ML algorithms to identify at-risk students and provide recommendations for academic improvement.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Mobile App Development</h3>
+                    <p>A cross-platform mobile application for task management and productivity. Built with React Native, featuring offline capabilities and real-time synchronization.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>API Development</h3>
+                    <p>A RESTful API service for managing and serving data across multiple applications. Includes comprehensive documentation, rate limiting, and authentication mechanisms.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email or my social media.</p>
-            <p>Email: <a href="mailto:olibaldev203@gmail.com">olibaldev203@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/baldevoli" target="_blank">baldevoli</a></p>
-            <p>GitHub: <a href="https://github.com/baldevoli" target="_blank">baldevoli</a></p>
+            <h2>Get In Touch</h2>
+            <p>I'm always excited to connect with fellow developers, potential collaborators, or anyone interested in discussing technology and innovation. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:olibaldev203@gmail.com">
+                    <span>📧</span>
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/baldevoli" target="_blank">
+                    <span>💼</span>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/baldevoli" target="_blank">
+                    <span>💻</span>
+                    GitHub
+                </a>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Baldev Oli. All Rights Reserved.</p>
+            <p>&copy; 2024 Baldev Oli. All Rights Reserved. Built with ❤️ and modern web technologies.</p>
         </div>
     </footer>
+
+    <script>
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe project cards
+        document.querySelectorAll('.project').forEach(project => {
+            project.style.opacity = '0';
+            project.style.transform = 'translateY(30px)';
+            project.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(project);
+        });
+    </script>
 </body>
 </html>

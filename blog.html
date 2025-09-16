@@ -1,19 +1,288 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="UTF-8">
-    <title>This is going to be my Blog website</title>
-    <body>
-    <p>The page is for the bolg and</p>
-      <ul>
-        <li>Need to make the plan for the page</li>
-        <li>Have to learn the css on the base level</li>
-        <li>Have to finish the odin project</li>
-        <li>This is the 5th contribution</li>
-	<li> <h2> This can be the push needed to make the git green</h></li>
-      </ul>       
-    </body>
-    </head>
-  </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baldev Oli - Blog</title>
+    <meta name="description" content="Blog posts by Baldev Oli about computer science, programming, and technology">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
 
+    <header>
+        <div class="container">
+            <h1>Baldev Oli</h1>
+            <p>Computer Science Student | Full-Stack Developer | Data Science Enthusiast</p>
+            <a href="index.html" class="home-btn">Home</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <section id="blog">
+        <div class="container">
+            <div class="blog-content">
+                <h2>My Learning Journey</h2>
+                <p>Welcome to my blog! Here I share insights from my computer science journey, coding experiences, and thoughts on technology. Join me as I explore the fascinating world of programming and software development.</p>
+                
+                <div class="blog-posts">
+                    <article class="blog-post">
+                        <h3>Getting Started with Full-Stack Development</h3>
+                        <p class="post-date">December 2024</p>
+                        <p>My journey into full-stack development has been both challenging and rewarding. In this post, I'll share the key technologies I've learned and the projects that have shaped my understanding of modern web development.</p>
+                        <div class="post-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3>Data Science: From Theory to Practice</h3>
+                        <p class="post-date">November 2024</p>
+                        <p>Exploring the intersection of statistics, programming, and domain knowledge. I discuss my experience with Python libraries like Pandas and NumPy, and how they've helped me analyze real-world datasets.</p>
+                        <div class="post-tags">
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3>Balancing Work, School, and Coding</h3>
+                        <p class="post-date">October 2024</p>
+                        <p>As a working student, finding time for coding projects and learning new technologies can be challenging. Here are some strategies that have helped me stay productive and continue growing as a developer.</p>
+                        <div class="post-tags">
+                            <span class="tag">Productivity</span>
+                            <span class="tag">Time Management</span>
+                            <span class="tag">Learning</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3>My Experience with The Odin Project</h3>
+                        <p class="post-date">September 2024</p>
+                        <p>The Odin Project has been an incredible resource in my coding journey. I share my experience with their curriculum, the projects I've built, and how it's complemented my formal computer science education.</p>
+                        <div class="post-tags">
+                            <span class="tag">The Odin Project</span>
+                            <span class="tag">Self-Learning</span>
+                            <span class="tag">Web Development</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3>Building My First Portfolio Website</h3>
+                        <p class="post-date">August 2024</p>
+                        <p>Creating this portfolio website has been a great learning experience. I walk through the design decisions, technologies used, and the challenges I faced while building a responsive, modern website.</p>
+                        <div class="post-tags">
+                            <span class="tag">Portfolio</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </article>
+
+                    <article class="blog-post">
+                        <h3>Contributing to Open Source</h3>
+                        <p class="post-date">July 2024</p>
+                        <p>My first steps into the open-source community and how contributing to projects has improved my coding skills, collaboration abilities, and understanding of software development best practices.</p>
+                        <div class="post-tags">
+                            <span class="tag">Open Source</span>
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Collaboration</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="blog-coming-soon">
+                    <h3>Coming Soon</h3>
+                    <ul>
+                        <li>Deep dive into React hooks and state management</li>
+                        <li>Building RESTful APIs with Node.js and Express</li>
+                        <li>Database design principles and best practices</li>
+                        <li>My experience with version control and Git workflows</li>
+                        <li>Preparing for technical interviews: tips and strategies</li>
+                        <li>Exploring machine learning algorithms with Python</li>
+                    </ul>
+                </div>
+
+                <div class="blog-contact">
+                    <p>Have questions about any of my posts or want to discuss a topic? Feel free to reach out!</p>
+                    <div class="contact-links">
+                        <a href="mailto:olibaldev203@gmail.com">
+                            <span>📧</span>
+                            Email Me
+                        </a>
+                        <a href="https://www.linkedin.com/in/baldevoli" target="_blank">
+                            <span>💼</span>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/baldevoli" target="_blank">
+                            <span>💻</span>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Baldev Oli. All Rights Reserved. Built with ❤️ and modern web technologies.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+
+        // Add animation on scroll for blog posts
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe blog posts
+        document.querySelectorAll('.blog-post').forEach(post => {
+            post.style.opacity = '0';
+            post.style.transform = 'translateY(30px)';
+            post.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(post);
+        });
+    </script>
+
+    <style>
+        .blog-posts {
+            margin: 2rem 0;
+        }
+
+        .blog-post {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px var(--shadow);
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px var(--shadow-hover);
+        }
+
+        .blog-post h3 {
+            color: var(--text);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .post-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .blog-post p {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .post-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .blog-coming-soon {
+            background: var(--background-alt);
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        .blog-coming-soon h3 {
+            color: var(--text);
+            margin-bottom: 1rem;
+        }
+
+        .blog-coming-soon ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .blog-coming-soon li {
+            background: white;
+            margin-bottom: 0.5rem;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            color: var(--text-light);
+            border-left: 3px solid var(--accent);
+        }
+
+        .blog-contact {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--border);
+        }
+
+        .blog-contact p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .blog-post {
+                padding: 1.5rem;
+            }
+            
+            .blog-coming-soon {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</body>
+</html>
