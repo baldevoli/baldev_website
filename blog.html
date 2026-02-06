@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Baldev Oli</title>
+    <title>Blog | Baldev Oli</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>My Learning Journey</h1>
-            <a href="index.html">Home</a>
+ <header>
+    <div class="container header-flex">
+        <div class="header-left">
+            <h1>Baldev Oli</h1>
         </div>
-    </header>
 
-    <main class="container" style="padding: 2rem 1.5rem;">
-        <article class="project" style="margin-bottom: 1.5rem;">
-            <h3>Full-Stack Development</h3>
-            <p style="font-style: italic; font-size: 0.9rem;">December 2024 </p>
-            <p>Sharing key technologies like React and JavaScript.</p>
-        </article>
-        
-        <article class="project">
-            <h3>Data Science Practice</h3>
-            <p style="font-style: italic; font-size: 0.9rem;">November 2024 </p>
-            <p>Exploring Python libraries like Pandas and NumPy.</p>
-        </article>
-    </main>
+        <div class="header-center">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <button id="themeToggle">🌙</button>
+        </div>
+    </div>
+</header>
+
+    <section id="blog">
+        <div class="container blog-content">
+            <h2>Latest Posts</h2>
+            <ul>
+                <li>Understanding Full-Stack Development: Tips & Tools</li>
+                <li>Data Science Project Ideas for Students</li>
+                <li>How to Build Interactive Dashboards with Python</li>
+                <li>Top 5 Open-Source Projects to Contribute in 2026</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,30 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Baldev Oli</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baldev Oli - Resume</title>
+    <meta name="description" content="Resume of Baldev Oli - Computer Science Student at UMBC">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+<header>
+    <div class="container header-flex">
+        <div class="header-left">
+            <h1>Baldev Oli</h1>
+        </div>
+
+        <div class="header-center">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-right">
+            <button id="themeToggle">🌙</button>
+        </div>
+    </div>
+</header>
+
+
+    <section id="resume">
         <div class="container">
-            <h1>Resume</h1>
-            <a href="index.html">← Back Home</a>
+            <div class="resume-content">
+                <h2>Resume</h2>
+                <div class="resume-actions">
+                    <a href="BaldevOli_Main.pdf" download class="download-btn">
+                        <span></span>
+                        Download PDF
+                    </a>
+                </div>
+                
+                <div class="pdf-container">
+                    <iframe src="BaldevOli_Main.pdf" width="100%" height="800px" frameborder="0">
+                        <p>Your browser does not support PDFs. 
+                        <a href="BaldevOli_Main.pdf" target="_blank">Click here to view the PDF</a>.</p>
+                    </iframe>
+                </div>
+                
+                <div class="resume-info">
+                    <h3>Quick Contact Info</h3>
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <strong>Email:</strong> 
+                            <a href="mailto:olibaldev203@gmail.com">olibaldev203@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Location:</strong> Nottingham, MD
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +1-929-358-9606
+                        </div>
+                        <div class="contact-item">
+                            <strong>LinkedIn:</strong> 
+                            <a href="https://www.linkedin.com/in/baldevoli" target="_blank">linkedin.com/in/baldevoli</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>GitHub:</strong> 
+                            <a href="https://github.com/baldevoli" target="_blank">github.com/baldevoli</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <main class="container" style="padding: 2rem 1.5rem;">
-        <div style="text-align: center; margin-bottom: 2rem;">
-            <a href="BaldevOli_Main.pdf" download style="display: inline-block; padding: 1rem 2rem; background: black; color: white; border-radius: 8px; text-decoration: none;">
-                Download PDF Resume
-            </a>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Baldev Oli.</p>
         </div>
+    </footer>
 
-        <div class="resume-info">
-            <h3>Contact Details</h3>
-            <p><strong>Email:</strong> olibaldev203@gmail.com </p>
-            <p><strong>Location:</strong> Nottingham, MD </p>
-            <p><strong>Phone:</strong> +1-929-358-9606 </p>
-        </div>
-    </main>
+    <script>
+        // Scroll progress indicator
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+    </script>
+
+    <style>
+        .resume-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: #000000;
+            color: white;
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 0.9rem;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .pdf-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 6px var(--shadow);
+            border: 1px solid var(--border);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .pdf-container iframe {
+            border-radius: 8px;
+            width: 100%;
+            min-height: 800px;
+        }
+
+        .resume-info {
+            background: var(--background-alt);
+            border-radius: 12px;
+            padding: 2rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        .resume-info h3 {
+            color: var(--text);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .contact-item strong {
+            color: var(--text);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .resume-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .download-btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+
+            .pdf-container iframe {
+                min-height: 600px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .resume-info {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .pdf-container iframe {
+                min-height: 500px;
+            }
+
+            .resume-info {
+                padding: 1rem;
+            }
+        }
+    </style>
 </body>
 </html>

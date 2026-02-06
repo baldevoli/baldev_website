@@ -3,57 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baldev Oli - Computer Science Student</title>
+    <title>Baldev Oli - CS Student & Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="scroll-indicator"><div class="scroll-progress" id="scrollProgress"></div></div>
+    <!-- Scroll Progress -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
 
     <header>
         <div class="container">
             <h1>Baldev Oli</h1>
-            <p>Computer Science Student | Full-Stack Developer</p>
+            <p>Computer Science Student | Full-Stack Developer | Data Science Enthusiast</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
+                <button id="themeToggle">🌙</button>
             </nav>
         </div>
     </header>
 
-    <section id="about" class="container" style="padding: 4rem 1.5rem;">
-        <h2>About Me</h2>
-        <p>I'm a Computer Science student at UMBC. I enjoy building full-stack solutions and exploring data science. My journey started at CCBC and continues at UMBC.</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Baldev Oli, a Computer Science student at UMBC. I enjoy building full-stack applications and exploring data science.</p>
+            <p>My journey began at CCBC and continues at UMBC. I focus on clean, efficient code, intuitive UX, and scalable solutions.</p>
+            <p>Outside coding, I explore new tech, contribute to open-source, and write about my learning journey.</p>
+        </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>E-Commerce Platform</h3>
-                <p>Full-stack solution with secure payment processing.</p>
+    <section id="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack solution with authentication, product management, and secure payments.</p>
+                    <a href="project-ecommerce.html" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Data Visualization Dashboard</h3>
+                    <p>Interactive dashboard using Python and JavaScript to visualize complex datasets.</p>
+                    <a href="project-dashboard.html" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Student Management System</h3>
+                    <p>Manage student records, grades, and automated reporting tools.</p>
+                    <a href="project-student.html" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Machine Learning Model</h3>
+                    <p>Predict student performance using ML algorithms and provide actionable insights.</p>
+                    <a href="project-ml.html" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Mobile App Development</h3>
+                    <p>React Native app for task management with offline support and real-time sync.</p>
+                    <a href="project-mobile.html" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>API Development</h3>
+                    <p>RESTful API with authentication, rate limiting, and comprehensive docs.</p>
+                    <a href="project-api.html" target="_blank">View Project</a>
+                </div>
             </div>
-            <div class="project">
-                <h3>ML Performance Model</h3>
-                <p>Analyzing student patterns using Python and ML algorithms.</p>
-            </div>
-            </div>
+        </div>
     </section>
 
-    <footer style="text-align: center; padding: 2rem; margin-top: 4rem; border-top: 1px solid #eee;">
-        <p>&copy; 2026 Baldev Oli. Built with ❤️ and modern CSS.</p>
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Always happy to connect with developers, collaborators, or anyone interested in tech!</p>
+            <div class="contact-links">
+                <a href="mailto:olibaldev203@gmail.com">📧 Email Me</a>
+                <a href="https://www.linkedin.com/in/baldevoli" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/baldevoli" target="_blank">💻 GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Baldev Oli. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script>
-        window.onscroll = () => {
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            document.getElementById("scrollProgress").style.width = (winScroll / height) * 100 + "%";
-        };
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

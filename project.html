@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button id="themeToggle">Toggle Theme</button>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Project Details</h1>
+            <p>Take a closer look at this project</p>
+        </div>
+    </header>
+
+    <!-- Project Section -->
+    <section class="project-detail container">
+        <h2>Project Title</h2>
+        
+        <img src="project-image.jpg" alt="Project Screenshot" class="project-image">
+
+        <div class="project-info">
+
+            <h3>Technologies Used:</h3>
+            <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+
+            <div class="project-buttons">
+                <a href="https://live-project-link.com" target="_blank">View Live</a>
+                <a href="index.html">Back to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Dark Mode Toggle
+        const toggle = document.getElementById('themeToggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
