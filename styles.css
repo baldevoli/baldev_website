@@ -1,20 +1,14 @@
-/* Black and White Portfolio Theme */
 :root {
-    --primary: #000000;
-    --primary-dark: #333333;
-    --secondary: #666666;
-    --accent: #ffffff;
+    --primary: #2563eb;
+    --accent: #3b82f6;
+    --text: #1f2937;
+    --text-light: #4b5563;
+    --text-muted: #9ca3af;
     --background: #ffffff;
-    --background-alt: #f8f8f8;
-    --text: #000000;
-    --text-light: #333333;
-    --text-muted: #666666;
-    --border: #e0e0e0;
-    --shadow: rgba(0, 0, 0, 0.1);
-    --shadow-hover: rgba(0, 0, 0, 0.2);
-    --success: #000000;
-    --warning: #333333;
-    --error: #000000;
+    --background-alt: #f9fafb;
+    --border: #e5e7eb;
+    --shadow: rgba(0, 0, 0, 0.05);
+    --shadow-hover: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -24,509 +18,93 @@
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
     color: var(--text);
+    line-height: 1.6;
     background-color: var(--background);
-    scroll-behavior: smooth;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 1.5rem; /* Prevents text from hitting screen edges on mobile */
 }
 
-/* Header Styles */
+/* Header & Navigation */
 header {
-    background: #000000;
-    color: white;
     padding: 2rem 0;
-    position: relative;
-}
-
-
-header .container {
+    background: var(--background-alt);
+    border-bottom: 1px solid var(--border);
     text-align: center;
 }
 
 header h1 {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: clamp(1.5rem, 8vw, 2.5rem); /* Fluid typography for mobile */
     margin-bottom: 0.5rem;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header p {
-    font-size: 1.25rem;
-    opacity: 0.9;
-    margin-bottom: 2rem;
-}
-
-/* Navigation */
-nav {
-    margin-top: 1.5rem;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; /* Allows menu to wrap on small screens */
 }
 
-nav ul li a {
-    color: white;
+nav a {
     text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.1);
-    font-size: 0.9rem;
-}
-
-nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* Home Button */
-.home-btn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.home-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-1px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* Section Styles */
-section {
-    padding: 4rem 0;
-    background-color: #ffffff;
-}
-
-section:nth-child(even) {
-    background-color: #f8f8f8;
-}
-
-h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 3rem;
-    color: var(--text);
-    position: relative;
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: var(--primary);
-    border-radius: 2px;
-}
-
-/* About Section */
-#about {
-    text-align: center;
-}
-
-#about p {
-    font-size: 1.125rem;
     color: var(--text-light);
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.8;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-/* Projects Section */
-#projects {
-    background-color: var(--background-alt);
-}
+nav a:hover { color: var(--primary); }
 
+/* Grid Layouts */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    /* This makes the grid responsive without media queries */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
     margin-top: 2rem;
 }
 
 .project {
-    background: #ffffff;
+    background: white;
+    padding: 1.5rem;
     border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #e0e0e0;
-}
-
-.project:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.project h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--text);
-}
-
-.project p {
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.project a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    background: #000000;
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.project a:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-}
-
-.project a::after {
-    content: '→';
+    border: 1px solid var(--border);
     transition: transform 0.3s ease;
 }
 
-.project a:hover::after {
-    transform: translateX(4px);
-}
+.project:hover { transform: translateY(-5px); }
 
-/* Contact Section */
-#contact {
-    text-align: center;
-}
-
-#contact p {
-    font-size: 1.125rem;
-    color: var(--text-light);
-    margin-bottom: 2rem;
-}
-
-.contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.contact-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #ffffff;
-    color: #000000;
-    text-decoration: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    font-weight: 500;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    border: 1px solid #e0e0e0;
-    font-size: 0.9rem;
-}
-
-.contact-links a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    background: #000000;
-    color: white;
-}
-
-/* Resume Section */
-#resume {
-    background-color: #f8f8f8;
-}
-
-.resume-content {
-    background: #ffffff;
-    border-radius: 12px;
-    padding: 3rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e0e0e0;
-}
-
-.contact-info {
-    text-align: right;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #e0e0e0;
-}
-
-.contact-info p {
-    margin-bottom: 0.5rem;
-    color: #333333;
-}
-
-.contact-info a {
-    color: #000000;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-.section-divider {
-    border: none;
-    height: 2px;
-    background: #000000;
-    margin: 1.5rem 0;
-    border-radius: 1px;
-}
-
-.institution, .job-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 0.5rem;
-}
-
-.degree-dates, .dates {
-    font-size: 1rem;
-    color: #333333;
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.job-details {
-    margin-top: 0.5rem;
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
-    color: #333333;
-}
-
-.job-details li {
-    margin-bottom: 0.5rem;
-    position: relative;
-}
-
-.job-details li::before {
-    content: '•';
-    color: #000000;
-    font-weight: bold;
-    position: absolute;
-    left: -1rem;
-}
-
-.skills-list {
-    margin-bottom: 1.5rem;
-    color: #333333;
-}
-
-.skills-list li {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-}
-
-/* Blog Section */
-#blog {
-    background-color: var(--background-alt);
-}
-
-.blog-content {
-    background: white;
-    border-radius: 12px;
-    padding: 3rem;
-    box-shadow: 0 4px 6px var(--shadow);
-    border: 1px solid var(--border);
-    text-align: center;
-}
-
-.blog-content h2 {
-    margin-bottom: 2rem;
-}
-
-.blog-content ul {
-    list-style: none;
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.blog-content li {
-    background: var(--background-alt);
-    margin-bottom: 1rem;
-    padding: 1rem 1.5rem;
-    border-radius: 8px;
-    border-left: 4px solid var(--primary);
-    transition: all 0.3s ease;
-}
-
-.blog-content li:hover {
-    transform: translateX(8px);
-    box-shadow: 0 4px 8px var(--shadow);
-}
-
-/* Footer */
-footer {
-    background: #000000;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    margin-top: 2rem;
-}
-
-footer p {
-    opacity: 0.8;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    header h1 {
-        font-size: 2rem;
-    }
-    
-    header p {
-        font-size: 1rem;
-    }
-    
-    nav ul {
-        gap: 1rem;
-    }
-    
-    nav ul li a {
-        padding: 0.5rem 1rem;
-        font-size: 0.9rem;
-    }
-    
-    .home-btn {
-        position: static;
-        margin-top: 1rem;
-        display: inline-block;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-    
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .project {
-        padding: 1.5rem;
-    }
+/* Mobile Optimizations */
+@media (max-width: 600px) {
+    section { padding: 3rem 0; }
     
     .contact-links {
+        display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 1rem;
     }
-    
-    .resume-content {
-        padding: 2rem;
-    }
-    
-    .blog-content {
-        padding: 2rem;
-    }
+
+    .contact-item { width: 100%; }
 }
 
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.75rem;
-    }
-    
-    nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    .project {
-        padding: 1rem;
-    }
-    
-    .contact-links a {
-        padding: 0.75rem 1.5rem;
-    }
-    
-    .resume-content {
-        padding: 1.5rem;
-    }
-    
-    .blog-content {
-        padding: 1.5rem;
-    }
-}
-
-/* Smooth animations */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.project {
-    animation: fadeInUp 0.6s ease-out;
-}
-
-.project:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.project:nth-child(3) {
-    animation-delay: 0.2s;
-}
-
-/* Scroll indicator */
+/* Scroll Indicator */
 .scroll-indicator {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 4px;
-    background: #e0e0e0;
     z-index: 1000;
 }
 
 .scroll-progress {
     height: 100%;
-    background: #000000;
+    background: var(--primary);
     width: 0%;
-    transition: width 0.1s ease;
 }
